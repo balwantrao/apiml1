@@ -8,14 +8,17 @@ import torch.nn as nn
 import torch.optim as optim
 from nltk.stem import WordNetLemmatizer
 from itertools import zip_longest  # For padding lists
+import os 
 
 # Set random seed for reproducibility
 random.seed(42)
 
 lemmatizer = WordNetLemmatizer()
 
+json_file_path = os.path.abspath('chatbot_api/chatbot/dat555.json')
+
 # Read the intents JSON file
-with open('chatbot_api/chatbot/dat555.json', 'r', encoding='utf-8') as file:
+with open(json_file_path, 'r', encoding='utf-8') as file:
     intents = json.load(file)
 
 # Creating empty lists to store data
