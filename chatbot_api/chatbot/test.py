@@ -16,7 +16,7 @@ random.seed(42)
 lemmatizer = WordNetLemmatizer()
 
 # Read the intents JSON file
-with open('dat555.json', 'r', encoding='utf-8') as file:
+with open('chatbot_api/chatbot/dat555.json', 'r', encoding='utf-8') as file:
     intents = json.load(file)
 
 # Creating empty lists to store data
