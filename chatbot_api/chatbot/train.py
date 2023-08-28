@@ -15,7 +15,7 @@ random.seed(42)
 
 lemmatizer = WordNetLemmatizer()
 
-json_file_path = os.path.abspath('chatbot_api/chatbot/dat555.json')
+json_file_path = os.path.abspath('dat555.json')
 
 # Read the intents JSON file
 with open(json_file_path, 'r', encoding='utf-8') as file:
